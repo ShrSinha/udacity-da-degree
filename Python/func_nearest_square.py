@@ -4,13 +4,12 @@ def nearest_square(limit):
 
 	limit:int
 	"""
-	i = 1
-	while i**2 < limit:
-	    i += 1
-	    
-	return (i-1)**2    
-    
+	i = 0
 
+	while (i + 1)**2 < limit: 
+		i += 1
+	return i**2		
+   
 test1 = nearest_square(0)
 print("expected result: 0, actual result: {}".format(test1))
 
