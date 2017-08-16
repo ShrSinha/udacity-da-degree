@@ -8,16 +8,14 @@ def is_string_unique(str):
 		return False
 
 	# List of boolean values. Index i indicates if ASCII character i is present.
-	list = []
-	for int in range(ascii_value_set):
-		list.append(False)
-
+	list_bool = [False for int in range(ascii_value_set)]
+	
 	for char in str:
 		int = ord(char)
-		if list[int]:
+		if list_bool[int]:
 			return False
 		else:
-			list[int] = True	
+			list_bool[int] = True	
 		
 	
 	return True		
