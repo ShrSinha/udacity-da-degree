@@ -1,4 +1,5 @@
 def func_most_prolific_yr(dict_discography):
+	r"""Return the highest occuring value in dictionary."""
 
 	temp_list =[]
 	temp_count = 0

@@ -1,7 +1,6 @@
 def func_square(limit):
-	"""
-	Populate set with all non-negtive square integers less than given number.
-	"""
+	r"""Return set of all non-negtive, square integers, less than the input integer."""
+
 	square = set()
 	i = 0
 
@@ -11,5 +10,7 @@ def func_square(limit):
 	
 	return(square)	
 
-# Note 0 is an integer and a square.
+
+
+# Note 0 is an integer as well as a square.
 print(func_square(10))        

@@ -1,8 +1,11 @@
 def is_string_unique(str):
+	r"""Return False if input string has duplicate characters.
+	
+	str -- string. Limited to ASCII character set.
 	"""
-	Return False if string has duplicate characters. Assume string to be ASCII.
-	"""
+
 	ascii_value_set = 128
+
 	#If len(str) > 128, then it cannot be unique.
 	if len(str) > 128:
 		return False
@@ -16,9 +19,8 @@ def is_string_unique(str):
 			return False
 		else:
 			list_bool[int] = True	
-		
-	
 	return True		
+
 
 
 print('is_string_unique: {}'.format(is_string_unique('abcabc')))
