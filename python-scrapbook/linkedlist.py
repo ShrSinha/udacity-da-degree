@@ -35,6 +35,26 @@ class LinkedList():
 		else:	 	
 			return None
 
+	def delete_all(self,value):
+		previous_element = None
+		current_element = self.head
+		while current_element:
+			if current_element.value == value:
+				if previous_element:
+					previous_element.next = current_element.next
+					#return current_element.value
+					print("in for {}".format(current_element.value))
+				else:
+					self.head = current_element.next
+					print("in else {}".format(current_element.value))
+					#return current_element.value
+			previous_element = current_element
+			current_element = current_element.next
+			print(2)
+		#return 1	
+
+
+
 	def delete(self,rm_value):
 		#Delete the first element found with a given value.
 		counter_element = self.head
